@@ -1,25 +1,19 @@
 <template>
   <div id="app">
-     <header :headTitle="headMsg"></header>
-     <div class="content">
-        <router-view/>
-     </div>
+     <!-- <header :headTitle="headMsg"></header> -->
+    <router-view/>
 
   </div>
 </template>
 
 <script>
-  import header from './components/header'
 export default {
   name: 'App',
   data(){
       return{
-        headMsg:'wodedingbujjjjjj'
+        // headMsg:'wodedingbujjjjjj'
       }
   },
-  components:{
-      'header':header
-  }
 }
 </script>
 

@@ -7,6 +7,8 @@ Vue.config.productionTip = false
 //引入mint-ui
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import './assets/js/fontsize.js'
+import $ from 'jquery'
 Vue.use(MintUI)
 
 
