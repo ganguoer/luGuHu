@@ -2,7 +2,7 @@
   <div id="myInfo">
      <div class="infoT">
         <div class="userimg">
-           
+
         </div>
        <p>昵称  ganguoer</p>
        <p>手机号 18411111111</p>
