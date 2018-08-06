@@ -54,7 +54,7 @@
 <style scoped>
   .footer{
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     box-sizing: border-box;
