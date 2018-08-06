@@ -28,12 +28,20 @@
         <p>从丽江市区到泸沽湖可以自己租车，一般淡季为350-550元，旺季为550-800元</p>
     </div>
     <p class="addressmsg">地址：丽江市宁蒗彝族自治县永宁乡泸沽湖</p>
+    <div class="addressdetail"></div>
 </div>
 </template>
 <style scoped>
 .addressmsg{
     height: .5rem;
-    line-height: .5rem
+    line-height: .5rem;
+    padding: 0 5%;
+    padding-top: .20rem;
+    padding-bottom: .15rem
+}
+.addressdetail{
+    width: 90%;
+    margin:0 auto;
 }
 .scenic-smart{
     padding: .3rem ;
