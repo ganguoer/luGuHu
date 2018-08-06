@@ -10,11 +10,7 @@
     <div class="content">
       <router-view/>
     </div>
-
-<!--底部导航-->
-    
-
-
+    <div class="height15"></div>
     <bottom-nav :idx="0"></bottom-nav>
  </div>
 
@@ -51,5 +47,5 @@
 .mint-header-title{
   font-size: 0.34rem;
 }
-
+.height15{height:1.5rem}
 </style>
