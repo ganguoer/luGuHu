@@ -1,6 +1,6 @@
-html{font-size: 100px;}
+html{font-size: 100px; height: 100%}
 
-body{margin: 0 auto; /* position: relative;*/ font-size: .24rem; width: 100%;overflow-x:hidden; font-family:"Microsoft YaHei","微软雅黑","PingFangSC-Light","Open Sans",Arial,"Hiragino Sans GB",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif; color: #666; background: #fff}
+body{margin: 0 auto; height: 100%; /* position: relative;*/ font-size: .24rem; width: 100%;overflow-x:hidden; font-family:"Microsoft YaHei","微软雅黑","PingFangSC-Light","Open Sans",Arial,"Hiragino Sans GB",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif; color: #666; background: #fff}
 h1, h2, h3, h4, p,div,span{margin:0; padding:0}
 dl, dt, dd, ul, ol, li,input,h1,p,img,textarea{margin:0; padding:0; list-style:none; border:0 none}
 input, textarea, select{-webkit-tap-highlight-color:transparent; -webkit-touch-callout:none}

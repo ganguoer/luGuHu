@@ -37,12 +37,16 @@
   font-family: "Microsoft YaHei","微软雅黑",'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%
 }
 .content{
   margin-top: 0.8rem;
+  height: 100%
 }
 .mint-header{
   background-color: #333333;
+  height: .8rem;
+  
 }
 .mint-header-title{
   font-size: 0.34rem;
