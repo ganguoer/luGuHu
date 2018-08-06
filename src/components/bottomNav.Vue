@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div v-for='(item,index) of items' :class='[item.cls,{on:index === idx}]' @click="$router.push(item.push)">
+    <div v-for='(item,index) of items' :key="index" :class='[item.cls,{on:index === idx}]' @click="$router.push(item.push)">
       <span  :class='[item.icon,{onb:index === idx}]'> </span>
       <p :class="['colorChange',{on:index===idx}]" >{{item.name}}</p>
     </div>
