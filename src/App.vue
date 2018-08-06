@@ -2,7 +2,6 @@
   <div id="app">
 
      <!-- <header :headTitle="headMsg"></header> -->
-    <router-view/>
     <mt-header fixed title="我的"></mt-header>
 
     <div class="content">
@@ -10,28 +9,7 @@
     </div>
 
 <!--底部导航-->
-      <mt-tabbar v-model="selected">
-        <mt-tab-item id="index">
-          <img slot="icon" src="../static/images/1.png">
-          首页
-        </mt-tab-item>
-        <mt-tab-item id="order">
-          <img slot="icon" src="../static/images/1.png">
-          资讯
-        </mt-tab-item>
-        <mt-tab-item id="market">
-          <img slot="icon" src="../static/images/1.png">
-          微商城
-        </mt-tab-item>
-        <mt-tab-item id="guide">
-          <img slot="icon" src="../static/images/1.png">
-          自导
-        </mt-tab-item>
-        <mt-tab-item id="my">
-          <img slot="icon" src="../static/images/1.png">
-          我的
-        </mt-tab-item>
-      </mt-tabbar>
+    
 
 
   </div>
@@ -63,7 +41,6 @@ export default {
   font-family: "Microsoft YaHei","微软雅黑",'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 .content{
   margin-top: 0.4rem;

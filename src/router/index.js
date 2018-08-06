@@ -4,6 +4,7 @@ import index from '@/components/index/Index'
 import my from '@/components/my/my'   //我的页面
 import eatPage from '@/components/index/eatPage'
 import order from '@/components/my/order'   //我的订单页面
+import detailScenic from '@/components/index/detailScenic'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/order',
       name: 'order',
       component: order
+    },
+    {
+      path: '/detailScenic',
+      name: 'detailScenic',
+      component: detailScenic
     }
   ]
 })
