@@ -36,7 +36,7 @@
        <div class="order">
          <span>个人信息</span>
          <div class="orderR">
-           <router-link to="/order">查看详情</router-link>
+           <router-link to="/myInfo">查看详情</router-link>
            <span class="arrowright"> > </span>
          </div>
        </div>
@@ -46,7 +46,7 @@
        <div class="order">
          <span class="ling">消息 <img src="../../../static/images/my-info.png" alt=""></span>
          <div class="orderR">
-           <router-link to="/order">查看详情</router-link>
+           <router-link to="/notify">查看详情</router-link>
            <span class="arrowright"> > </span>
          </div>
        </div>
@@ -73,29 +73,29 @@ export default{
 }
 .myimg{
   background: #fff;
-  height: 1.85rem;
+  height: 3.7rem;
   border-bottom: 1px solid #e4e4e4;
   margin: 0 auto;
 }
 .myimg img{
-  width: 0.98rem;
-  height: 0.98rem;
+  width: 1.96rem;
+  height: 1.96rem;
   border-radius: 50%;
-  margin-top: 0.4rem;
+  margin-top: 0.8rem;
 
 }
   .bg{
     background: #f9f9f9;
-    height: 0.1rem;
+    height: 0.2rem;
   }
   .myOrder{
-    height: 1.23rem;
+    height: 2.46rem;
     background: #fff;
     border-top: 1px solid #e4e4e4;
     border-bottom: 1px solid #e4e4e4;
   }
   .myinfo{
-    height: 0.37rem;
+    height: 0.74rem;
     background: #fff;
     border-top: 1px solid #e4e4e4;
     border-bottom: 1px solid #e4e4e4;
@@ -103,13 +103,13 @@ export default{
 
   .order{
     color: #000;
-    height: 0.37rem;
-    line-height: 0.37rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
     border-bottom: 1px solid #e4e4e4;
-    margin: 0 0.12rem;
+    margin: 0 0.24rem;
   }
   .order>span{
-    font-size: 0.14rem;
+    font-size: 0.24rem;
     float: left;
   }
   .orderR{
@@ -118,7 +118,8 @@ export default{
   }
   .orderR>a{
     color: #606060;
-    padding-right: 0.06rem;
+    padding-right: 0.12rem;
+    font-size: 0.2rem;
   }
   /*.arrowright{*/
     /*width: 0.2rem;*/
@@ -126,27 +127,32 @@ export default{
   /*}*/
 .orderList{
   width: 80%;
-  margin: 0 auto;
-  height: 0.85rem;
+  margin-left: 10%;
+  height: 1.7rem;
+  display: flex;
 }
   .orderList li{
-    float: left;
-    margin: 0 10.5%;
-    margin-top: 0.23rem;
+    flex:1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    margin-top: 0.46rem;
   }
   .orderList>li>a>span:first-child{
     display: block;
-    font-size: 0.20rem;
-    margin-bottom: 0.08rem;
+    font-size: 0.4rem;
+    margin-bottom: 0.16rem;
   }
+.orderList>li>a>span:last-child{
+   font-size: 0.2rem;
+}
   span.ling{
     position: relative;
   }
 .order span img{
   position: absolute;
-  top: 0.07rem;
-  left: 0.32rem;
+  top: 0.14rem;
+  left: 0.64rem;
   display: inline-block;
-  width: 0.08rem;
+  width: 0.16rem;
 }
 </style>

@@ -1,37 +1,41 @@
 <template>
   <div id="app">
 
+<<<<<<< HEAD
      <!-- <header :headTitle="headMsg"></header> -->
     <mt-header fixed title="我的"></mt-header>
+=======
+    <mt-header fixed title="泸沽湖"></mt-header>
+>>>>>>> 8b517b7aab0a6f7b44142d70dea6f190a656d5ac
 
     <div class="content">
       <router-view/>
     </div>
 
+<<<<<<< HEAD
 <!--底部导航-->
     
 
 
   </div>
+=======
+    <bottom-nav :idx="0"></bottom-nav>
+ </div>
+>>>>>>> 8b517b7aab0a6f7b44142d70dea6f190a656d5ac
 </template>
 
 <script>
-export default {
+  import bottomNav from '@/components/bottomNav'  //底部导航
+  export default {
   name: 'App',
   data(){
       return{
-        // headMsg:'wodedingbujjjjjj
-        selected: 'my'
+
       }
   },
-
-  watch: {
-    selected: function (val, oldVal) {
-      // 这里就可以通过 val 的值变更来确定
-      console.log(val)
-    }
-  },
-
+  components:{
+      'bottom-nav':bottomNav
+  }
 
 }
 </script>
@@ -43,39 +47,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 .content{
-  margin-top: 0.4rem;
+  margin-top: 0.8rem;
 }
-  .mint-tabbar{
-    height: 0.65rem;
-    background: #3c3c3c;
-  }
-  .mint-tab-item-label{
-    color: #fff;
-  }
 .mint-header{
-  background-color: #333;
-  font-size: 0.16rem;
-  color: #fff;
+  background-color: #333333;
 }
-.mint-tabbar > .mint-tab-item.is-selected {
-  background-color: #3c3c3c;
-  color: #06b1f8;
+.mint-header-title{
+  font-size: 0.34rem;
 }
 
-.mint-tab-item-label {
-  color: #fff;
-  background: #06b1f8;
-  height: 0.2rem;
-  line-height: 0.2rem;
-}
-/* .mint-tabbar > .mint-tab-item.is-selected>.mint-tab-item-icon{ */
-  /*margin-top: -0.05rem;*/
-/* } */
-/*.mint-tabbar > .mint-tab-item.is-selected>.mint-tab-item-label{*/
-  /*color: #fff;*/
-  /*background: #06b1f8;*/
-  /*border-top: 10px solid #fff;*/
-  /*border-radius:0.15rem 0.15rem 0 0;*/
-  /*margin-top: -0.05rem;*/
-/*}*/
 </style>
