@@ -1,27 +1,23 @@
 <template>
   <div id="app">
 
-<<<<<<< HEAD
+
      <!-- <header :headTitle="headMsg"></header> -->
     <mt-header fixed title="我的"></mt-header>
-=======
     <mt-header fixed title="泸沽湖"></mt-header>
->>>>>>> 8b517b7aab0a6f7b44142d70dea6f190a656d5ac
+
 
     <div class="content">
       <router-view/>
     </div>
 
-<<<<<<< HEAD
 <!--底部导航-->
     
 
 
-  </div>
-=======
     <bottom-nav :idx="0"></bottom-nav>
  </div>
->>>>>>> 8b517b7aab0a6f7b44142d70dea6f190a656d5ac
+
 </template>
 
 <script>
