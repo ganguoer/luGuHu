@@ -10,7 +10,6 @@
     <div class="content">
       <router-view/>
     </div>
-    <div class="height15"></div>
     <bottom-nav :idx="0"></bottom-nav>
  </div>
 

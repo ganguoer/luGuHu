@@ -10,7 +10,8 @@ import detailScenic from '@/components/index/detailScenic'
 
 import myInfo from '@/components/my/myInfo'   //我的信息详情页面
 import notify from '@/components/my/notify'   //我的 通知 页面
-
+import indexListDetail from '@/components/index/indexListDetail'   //我 吃住行游详情页
+import demo from '@/components/index/demo'  
 
 Vue.use(Router)
 
@@ -50,6 +51,16 @@ export default new Router({
       path: '/notify',
       name: 'notify',
       component: notify
+    },
+    {
+      path:'/indexlistdetail',
+      name:'indexlistdetail',
+      component:indexListDetail
+    },
+    {
+      path:'/demo',
+      name:'demo',
+      component:demo
     }
   ]
 })

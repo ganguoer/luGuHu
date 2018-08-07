@@ -1,0 +1,37 @@
+[
+    {
+        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视'
+    },
+    {
+        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视'
+    },
+    {
+        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视'
+    },
+    {
+        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视'
+    },
+    {
+        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视'
+    }
+]

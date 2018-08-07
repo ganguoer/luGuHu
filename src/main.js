@@ -9,8 +9,10 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import './assets/js/fontsize.js'
 import $ from 'jquery'
+import Axios from 'axios'
 Vue.use(MintUI)
-
+Vue.prototype.$ajax = Axios;
+Vue.config.productionTip = false;
 
 
 //引入公共样式

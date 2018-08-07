@@ -29,6 +29,7 @@
     </div>
     <p class="addressmsg">地址：丽江市宁蒗彝族自治县永宁乡泸沽湖</p>
     <div id="addressdetail"></div>
+    <div class="height15"></div>
 </div>
 </template>
 <style scoped>
