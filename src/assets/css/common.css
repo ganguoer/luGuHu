@@ -1,4 +1,4 @@
-html{font-size: 100px; height: 100%}
+html{font-size: 100px; height: 100% ;text-align: center;}
 
 body{margin: 0 auto; height: 100%; /* position: relative;*/ font-size: .24rem; width: 100%;overflow-x:hidden; font-family:"Microsoft YaHei","微软雅黑","PingFangSC-Light","Open Sans",Arial,"Hiragino Sans GB",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif; color: #666; background: #fff}
 h1, h2, h3, h4, p,div,span{margin:0; padding:0}
