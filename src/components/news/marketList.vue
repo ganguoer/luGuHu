@@ -5,14 +5,8 @@
                 <h3>{{item.titname}}</h3>
                 <p class="sourcep">来源：{{item.resource}} <span>发布时间：{{item.times}}</span></p>
             </div>
-            <div class="descriptcontent">
-                <img class="firstimg" :src="item.imgsrc1" alt="">
-                <p class="desdetail">{{item.descripts}}</p>
-                <img class="firstimg" :src="item.imgsrc2" alt="">
-                <div class="titdiv clearfix"><span class="icon-s lf"></span> <span class="hoteltit lf">酒店设施</span></div>
-                <ul>
-                    <li v-for="(items,index) in item.sheshi" :key="index">{{items}}</li>
-                </ul>
+            <div class="descriptcontent" v-html="item.hm">
+                {{item.hm}}
             </div>
         </div>
         <div class="height15"></div>
@@ -22,7 +16,7 @@
 <script>
 import config from "../../assets/js/config.js";
 export default {
-    name: 'indexListDetail',
+    name: 'marketlist',
     data () {
         return {
         msg: []
@@ -35,7 +29,7 @@ export default {
         getmsg(){
             let id = this.$route.query.id
             var that=this;
-            that.$ajax.get(config.homePage.indexlistdetaileat).then(function(response) {
+            that.$ajax.get(config.news.marketlist).then(function(response) {
                 that.msg=eval(response.data)
             });
         }
@@ -49,20 +43,7 @@ export default {
     .titdiv .icon-s{width: .08rem; height:.33rem; background: #0ca2e1; display: inline-block;margin: .16rem 0 0 .15rem}
     .titdiv .hoteltit{display:inline-block;padding-left:.2rem; line-height: .66rem; color: #333;font-size: .28rem}
     .descriptcontent{background: #fff; border-top: solid 1px #e7e7e7; padding: 0 5%; margin-top: .1rem}
-    .descriptcontent ul{margin-top: .2rem}
-    .descriptcontent ul li{ line-height: .4rem;text-align: left; text-indent: .4rem}
-    .desdetail{
-        line-height: .45rem;
-        height: 5.85rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 13;
-        -webkit-box-orient: vertical;
-        padding-top: .2rem;
-        text-indent: .4rem
-    }
-    .descriptcontent .firstimg{ margin-top: .1rem}
+   
     .bgcolor{background: #f0f0f0;width: 100%; height: 100%}
     .moredetail{
         height: .92rem;

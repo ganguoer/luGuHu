@@ -1,4 +1,4 @@
-html{font-size: 100px; height: 100% ;text-align: center;}
+html{font-size: 100px; height: 100% ;}
 
 body{margin: 0 auto; height: 100%; /* position: relative;*/ font-size: .24rem; width: 100%;overflow-x:hidden; font-family:"Microsoft YaHei","微软雅黑","PingFangSC-Light","Open Sans",Arial,"Hiragino Sans GB",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif; color: #666; background: #fff}
 h1, h2, h3, h4, p,div,span{margin:0; padding:0}
@@ -21,7 +21,7 @@ input[type="number"]{-moz-appearance:textfield}
 ::-webkit-input-placeholder{color:#878787}
 ::-moz-placeholder{color:#878787}
 :-ms-input-placeholder{color:#878787}
-a{color: #000}
+a{color: #666}
 .programs-wrap .container{
   position: relative;
 }
@@ -129,3 +129,14 @@ select {
 
 
 
+.descriptcontent p{
+  line-height: .45rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 13;
+  -webkit-box-orient: vertical;
+  padding-top: .2rem;
+  text-indent: .4rem
+}
+.descriptcontent .firstimg{ margin-top: .1rem}

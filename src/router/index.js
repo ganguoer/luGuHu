@@ -19,6 +19,13 @@ import scenic from '@/components/guide/scenic' //自导详情页
 import market from '@/components/market/market'  //微商城
 import hotel from '@/components/market/hotel'  //微商城
 import hotelDetail from '@/components/market/hotelDetail'  //微商城
+
+
+import scenicSpotDynamics from '@/components/news/scenicSpotDynamics' //景区动态
+
+import activeList from '@/components/news/activeList'
+import marketList from '@/components/news/marketList'
+import sportList from '@/components/news/sportList'
 Vue.use(Router)
 
 export default new Router({
@@ -92,6 +99,26 @@ export default new Router({
       path:'/demo',
       name:'demo',
       component:demo
+    },
+    {
+      path:'/sceSpotDys',
+      name:'scenicSpotDynamics',
+      component:scenicSpotDynamics
+    },
+    {
+      path:'/activeList',
+      name:'activeList',
+      component:activeList
+    },
+    {
+      path:'/marketList',
+      name:'marketList',
+      component:marketList
+    },
+    {
+      path:'/sportList',
+      name:'sportList',
+      component:sportList
     }
   ]
 })

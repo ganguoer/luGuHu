@@ -6,7 +6,7 @@ import router from './router'
 Vue.config.productionTip = false
 //引入mint-ui
 import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.css'
+import './assets/css/style.css'
 import './assets/js/fontsize.js'
 import $ from 'jquery'
 import Axios from 'axios'

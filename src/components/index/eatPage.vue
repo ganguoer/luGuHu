@@ -20,7 +20,7 @@
                     <div class="lf img-msg"><img :src="item.srcimg"></div>
                     <div class="lf list-msg">
                       <p>{{item.descript}}</p>
-                      <router-link :to="{path:'/indexlistdetail?id='+item.id}" @click="routefn()" ><span>>>  查看详情</span></router-link>
+                      <router-link :to="{path:'/indexlistdetail/?id='+item.id}" @click="routefn()" ><span>>>  查看详情</span></router-link>
                     </div>
                   </div>
                 </li>
@@ -44,7 +44,6 @@
 
 <script>
 import config from "../../assets/js/config.js";
-import { Loadmore } from "mint-ui";
 export default {
   name: "eatPage",
   data() {

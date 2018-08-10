@@ -10,5 +10,14 @@ export default {
     //首页
     homePage:{
         msgList:`${base}/eatport.js`,
+        indexlistdetaileat:`${base}/indexListdetaileat.js`,
     },
+    news:{
+        scenic:`${base}/zxScenicSport.js`,
+        actives:`${base}/actives.js`,
+        market:`${base}/market.js`,
+        sportlist:`${base}/sportlist.js`,
+        marketlist:`${base}/marketlist.js`,
+        activelist:`${base}/activelist.js`
+    }
 }
