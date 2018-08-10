@@ -1,25 +1,25 @@
 [
     {
-        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "title":"2017年云南泸沽湖徒步公益活动",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        "srcimg":'http://localhost:8080/static/images/zx_active.jpg',
         'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视',
         "id":'1'
     },
     {
-        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "title":"云南泸沽湖免费体验摩梭民俗婚礼...",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        "srcimg":'http://localhost:8080/static/images/zx_active1.jpg',
         'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视',
         "id":'2'
     },
     {
-        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "title":"泸沽湖上演女神马拉松",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        "srcimg":'http://localhost:8080/static/images/zx_active2.jpg',
         'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视',
         "id":'3'
     },
@@ -27,12 +27,12 @@
         "title":"安驿客栈（泸沽湖白格蓝调站）",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        "srcimg":'http://localhost:8080/static/images/zx_active.jpg',
         'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视',
         "id":'4'
     },
     {
-        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "title":"泸沽湖上演女神马拉松",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
         "srcimg":'http://localhost:8080/static/images/details.jpg',

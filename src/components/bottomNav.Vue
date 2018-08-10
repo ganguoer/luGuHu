@@ -2,7 +2,7 @@
   <div class="footer">
     <div v-for='(item,index) of items' :key="index" :class='[item.cls,{on:index === idx}]' @click="$router.push(item.push)">
       <span  :class='[item.icon,{onb:index === idx}]'> </span>
-      <p :class="['colorChange',{on:index===idx}]" >{{item.name}}</p>
+      <p :class="['colorChange',{on:index === idx}]" >{{item.name}}</p>
     </div>
      <div class="mark"></div>
   </div>
@@ -24,7 +24,7 @@
           {
             cls:"info",
             name:"资讯",
-            push:"/info",
+            push:"/sceSpotDys",
             icon:"icon-1-08",
           },
           {

@@ -1,0 +1,42 @@
+[
+    {
+        "title":"泸沽湖景区迎来新年旅游热潮",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/zx_market.jpg',
+        'descript':'记者从丽江泸沽湖管委会获悉，2018年新年伊始，景区管理和经营部门加大了对泸沽湖景区的营销推广力度，与42家旅行社签约合作',
+        "id":'1'
+    },
+    {
+        "title":"丽江宁蒗推进交通建设 助力“高原明珠",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/zx_market1.jpg',
+        'descript':'新华网昆明12月23日电（李宁 和艳兰）22日,来自泸沽湖景区推介会暨泸沽湖机场航空市场发布会的消息',
+        "id":'2'
+    },
+    {
+        "title":"5年后成都到泸沽湖有望全程高速",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/zx_market2.jpg',
+        'descript':'去年10月，四川媒体上一条“成都7小时跑拢泸沽湖将不再是梦想”的消息引起了很多想自驾云南的四川游客的关注.',
+        "id":'3'
+    },
+    {
+        "title":"安驿客栈（泸沽湖白格蓝调站）",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/zx_market.jpg',
+        'descript':'这里客房设施都是经过精心的考虑和安排，为了让每间屋子都能与泸沽湖相近而居，几乎所有房间都为与泸沽湖对目相视',
+        "id":'4'
+    },
+    {
+        "title":"5年后成都到泸沽湖有望全程高速",
+        "source":"泸沽湖发布",
+        "times":'2018-06-28',
+        "srcimg":'http://localhost:8080/static/images/details.jpg',
+        'descript':'去年10月，四川媒体上一条“成都7小时跑拢泸沽湖将不再是梦想”的消息引起了很多想自驾云南的四川游客的关注.',
+        "id":'5'
+    }
+]

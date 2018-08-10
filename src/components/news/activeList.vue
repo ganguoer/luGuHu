@@ -5,14 +5,8 @@
                 <h3>{{item.titname}}</h3>
                 <p class="sourcep">来源：{{item.resource}} <span>发布时间：{{item.times}}</span></p>
             </div>
-            <div class="descriptcontent">
-                <img class="firstimg" :src="item.imgsrc1" alt="">
-                <p class="desdetail">{{item.descripts}}</p>
-                <img class="firstimg" :src="item.imgsrc2" alt="">
-                <div class="titdiv clearfix"><span class="icon-s lf"></span> <span class="hoteltit lf">酒店设施</span></div>
-                <ul>
-                    <li v-for="(items,index) in item.sheshi" :key="index">{{items}}</li>
-                </ul>
+            <div class="descriptcontent" v-html="item.hm">
+                {{item.hm}}
             </div>
         </div>
         <div class="height15"></div>
@@ -35,7 +29,7 @@ export default {
         getmsg(){
             let id = this.$route.query.id
             var that=this;
-            that.$ajax.get(config.homePage.indexlistdetaileat).then(function(response) {
+            that.$ajax.get(config.news.activelist).then(function(response) {
                 that.msg=eval(response.data)
             });
         }
