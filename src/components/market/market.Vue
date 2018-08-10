@@ -6,22 +6,22 @@
     <div class="mid">
        <div class="clearfix">
          <div class="midL">
-           <router-link class='linkto' to='/hotel'>
-             <img src="../../../static/images/scenic.png" alt="">
-             门票
+           <router-link class='linkto' to='/scenic'>
+             <img src="../../../static/images/scenic.png" alt="" style='margin-top: 0.2rem;width: 70%;'>
+            <p> 门票</p>
            </router-link>
          </div>
          <div class="midR">
            <router-link class='linkto' to='/hotel'>
-             <img src="../../../static/images/hotelbg.png" alt="">
-             酒店
+             <img src="../../../static/images/hotelbg.png" alt="" style='margin-top: 0.5rem;'>
+             <p>酒店</p>
            </router-link>
          </div>
        </div>
        <div class="midB">
-         <router-link class='linkto' to='/hotel'>
-           <img src="../../../static/images/guidebg.png" alt="">
-           导游
+         <router-link class='linkto' to='/tour'>
+           <img src="../../../static/images/guidebg.png" alt="" style='margin-top: 0.5rem;width: 87%;'>
+           <span>导游</span>
          </router-link>
        </div>
     </div>
@@ -42,6 +42,9 @@ export default{
 </script>
 
 <style scoped>
+  #market{
+    text-align: center;
+  }
   .mid{
     margin:  0.6rem 0.55rem 0;
   }
@@ -70,5 +73,11 @@ export default{
     display: block;
     font-size: 0.3rem;
     color: #fff;
+    position: relative;
+  }
+  .linkto>span{
+    position: absolute;
+    top: 56%;
+    right: 30%;
   }
 </style>

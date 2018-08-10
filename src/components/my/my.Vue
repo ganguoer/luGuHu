@@ -70,6 +70,7 @@ export default{
 
 #my{
   background: #f9f9f9;
+  text-align: center;
 }
 .myimg{
   background: #fff;

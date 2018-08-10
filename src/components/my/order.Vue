@@ -65,8 +65,10 @@ export default{
 
 </script>
 
-<style >
-
+<style scoped>
+#order{
+  text-align: center;
+}
   .mint-navbar {
     background-color: #fff;
     display: -webkit-box;

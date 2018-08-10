@@ -1,22 +1,23 @@
 <template>
-<div id="scenic">
-    jingqu
+<div id="tour">
+  daoyou -============
 </div>
 
 </template>
 
 <script>
 export default{
-    name:'scenic',
+    name:'tour',
     data(){
+        return{
 
+        }
     }
-
 }
 
 </script>
 
-<style>
+<style scoped>
 
 
 </style>

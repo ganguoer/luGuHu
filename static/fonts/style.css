@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?k8v80g');
-  src:  url('fonts/icomoon.eot?k8v80g#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?k8v80g') format('truetype'),
-    url('fonts/icomoon.woff?k8v80g') format('woff'),
-    url('fonts/icomoon.svg?k8v80g#icomoon') format('svg');
+  src:  url('./fonts/icomoon.eot?bdrft8');
+  src:  url('./fonts/icomoon.eot?bdrft8#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?bdrft8') format('truetype'),
+    url('./fonts/icomoon.woff?bdrft8') format('woff'),
+    url('./fonts/icomoon.svg?bdrft8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,75 +24,91 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-1-01:before {
+.icon-bottom:before {
   content: "\e900";
+  color: #888;
 }
-.icon-1-02:before {
+.icon-top:before {
   content: "\e901";
+  color: #888;
 }
-.icon-1-03:before {
+.icon-1-01:before {
   content: "\e902";
 }
-.icon-1-04:before {
+.icon-1-02:before {
   content: "\e903";
 }
-.icon-1-05:before {
+.icon-1-03:before {
   content: "\e904";
 }
-.icon-1-06:before {
+.icon-1-04:before {
   content: "\e905";
 }
-.icon-1-07:before {
+.icon-1-05:before {
   content: "\e906";
 }
-.icon-1-08:before {
+.icon-1-06:before {
   content: "\e907";
 }
-.icon-1-09:before {
+.icon-1-07:before {
   content: "\e908";
 }
-.icon-1-10:before {
+.icon-1-08:before {
   content: "\e909";
 }
-.icon-1-11:before {
+.icon-1-09:before {
   content: "\e90a";
 }
-.icon-1-12:before {
+.icon-1-10:before {
   content: "\e90b";
 }
-.icon-1-13:before {
+.icon-1-11:before {
   content: "\e90c";
 }
-.icon-1-14:before {
+.icon-1-12:before {
   content: "\e90d";
 }
-.icon-1-15:before {
+.icon-1-13:before {
   content: "\e90e";
 }
-.icon-1-16:before {
+.icon-1-14:before {
   content: "\e90f";
 }
-.icon-1-17:before {
+.icon-1-15:before {
   content: "\e910";
 }
-.icon-1-18:before {
+.icon-1-16:before {
   content: "\e911";
 }
-.icon-1-19:before {
+.icon-1-17:before {
   content: "\e912";
 }
-.icon-1-20:before {
+.icon-1-18:before {
   content: "\e913";
 }
-.icon-1-21:before {
+.icon-1-19:before {
   content: "\e914";
 }
-.icon-1-22:before {
+.icon-1-20:before {
   content: "\e915";
 }
-.icon-1-23:before {
+.icon-1-21:before {
   content: "\e916";
 }
-.icon-1-24:before {
+.icon-1-22:before {
   content: "\e917";
+}
+.icon-1-23:before {
+  content: "\e918";
+}
+.icon-1-24:before {
+  content: "\e919";
+}
+.icon-left-21:before {
+  content: "\e91a";
+  color: #888;
+}
+.icon-xinxi:before {
+  content: "\e91b";
+  color: #0ca2e1;
 }

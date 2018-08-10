@@ -5,7 +5,7 @@
    </div>
    <div class="seardh">
      <span class="icon-1-15"></span>
-     <input type="search" placeholder='sousuo' class='search'>
+     <input type="search" placeholder='景点名称/目的地'  class='search'>
    </div>
    <div class="hotelList">
      <ul>
@@ -52,6 +52,9 @@ export default{
 </script>
 
 <style scoped>
+  #hotel{
+    text-align: center;
+  }
 .top{
   width: 100%;
   height: 0.88rem;
@@ -61,9 +64,26 @@ export default{
   padding: 0.18rem 0;
   border-bottom: 1px solid #e4e4e4;
   background-color: #f4f4f4;
+  position: relative;
+}
+.search::-webkit-input-placeholder{
+  color:#666666;
+}
+.search:-moz-placeholder{
+  color:#666666;
+}
+.search::-moz-placeholder{
+  color:#666666;
+}
+.search:-ms-input-placeholder {
+  color: #666666;
 }
 .seardh>span{
-
+  font-size: 0.28rem;
+  color: #666666;
+  position: absolute;
+  top: 0.34rem;
+  left: 1.52rem;
 }
 .seardh>input{
   border: 1px solid #f0f0f0;
@@ -71,6 +91,9 @@ export default{
   background-color: #fff;
   border-radius: 0.3rem;
   width: 65%;
+  padding-left: 0.6rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
   .hotelList{
     width: 100%;

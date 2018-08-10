@@ -11,14 +11,19 @@ import detailScenic from '@/components/index/detailScenic'
 import myInfo from '@/components/my/myInfo'   //我的信息详情页面
 import notify from '@/components/my/notify'   //我的 通知 页面
 import indexListDetail from '@/components/index/indexListDetail'   //我 吃住行游详情页
-import demo from '@/components/index/demo'  
+import demo from '@/components/index/demo'
 
 import guide from '@/components/guide/guide' //自导首页
-import scenic from '@/components/guide/scenic' //自导详情页
+// import scenic from '@/components/guide/scenic' //自导详情页
 
 import market from '@/components/market/market'  //微商城
-import hotel from '@/components/market/hotel'  //微商城
+import hotel from '@/components/market/hotel'  //酒店
 import hotelDetail from '@/components/market/hotelDetail'  //微商城
+import comment from '@/components/market/comment'  //微商城评论
+import scenic from '@/components/market/scenic'    //门票
+import scenicDetail from '@/components/market/scenicDetail'    //门票详情
+import tour from '@/components/market/tour'    //门票
+
 Vue.use(Router)
 
 export default new Router({
@@ -49,14 +54,29 @@ export default new Router({
       component: hotelDetail
     },
     {
+      path: '/comment',    //酒店详情评论
+      name: 'comment',
+      component: comment
+    },
+    {
+      path:'/scenic',
+      name:'scenic',
+      component: scenic
+    },
+    {
+      path:'/scenicDetail',
+      name:'scenicDetail',
+      component: scenicDetail
+    },
+    {
+      path:'/tour',
+      name:'tour',
+      component: tour
+    },
+    {
       path: '/guide',    //自导页面
       name: 'guide',
       component: guide
-    },
-    {
-      path: '/scenic',
-      name: 'scenic',
-      component: scenic
     },
     {
       path: '/my',   //我的页面

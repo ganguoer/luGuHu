@@ -76,6 +76,7 @@ export default{
   height: 11.24rem;
   background-size: cover;
   position: relative;
+  text-align: center;
 }
   .guideL{
     width: 1rem;

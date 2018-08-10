@@ -62,6 +62,7 @@
     background: #3c3c3c;
     width: 100%;
     z-index: 1;
+    text-align: center;
   }
   div{
     flex: 1;
@@ -77,9 +78,6 @@
   div p{
     color:#fff;
     font-size: 0.22rem;
-
-
-
     padding-top: 0.12rem;
     z-index: 2;
   }
