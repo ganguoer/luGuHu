@@ -19,7 +19,7 @@
          </div>
        </div>
        <div class="midB">
-         <router-link class='linkto' to='/tour'>
+         <router-link class='linkto' to='/tourGuideList'>
            <img src="../../../static/images/guidebg.png" alt="" style='margin-top: 0.5rem;width: 87%;'>
            <span>导游</span>
          </router-link>

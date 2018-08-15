@@ -23,7 +23,9 @@ import hotelDetail from '@/components/market/hotelDetail'  //微商城
 import comment from '@/components/market/comment'  //微商城评论
 import scenic from '@/components/market/scenic'    //门票
 import scenicDetail from '@/components/market/scenicDetail'    //门票详情
-import tour from '@/components/market/tour'    //门票
+// import tour from '@/components/market/tour'    //门票
+import tourGuideList from '@/components/market/tourGuideList'    //导游列表
+import tourDetail from '@/components/market/tourDetail'    //导游详情
 
 
 import scenicSpotDynamics from '@/components/news/scenicSpotDynamics' //景区动态
@@ -76,11 +78,7 @@ export default new Router({
       name:'scenicDetail',
       component: scenicDetail
     },
-    {
-      path:'/tour',
-      name:'tour',
-      component: tour
-    },
+ 
     {
       path: '/guide',    //自导页面
       name: 'guide',
@@ -140,6 +138,16 @@ export default new Router({
       path:'/sportList',
       name:'sportList',
       component:sportList
+    },
+    {
+      path:'/tourGuideList',
+      name:'tourGuideList',
+      component:tourGuideList
+    },
+    {
+      path:'/tourDetail',
+      name:'tourDetail',
+      component:tourDetail
     }
   ]
 })
