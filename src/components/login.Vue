@@ -1,13 +1,15 @@
 <template>
-<div id="tour">
-  daoyou -============
+<div id="login">
+   gfgfgfgfgf =====================
+
+
 </div>
 
 </template>
 
 <script>
 export default{
-    name:'tour',
+    name:'login',
     data(){
         return{
 

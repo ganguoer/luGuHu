@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/components/index/Index'
+import login from '@/components/login'
 
 import eatPage from '@/components/index/eatPage'
 import my from '@/components/my/my'   //我的页面
@@ -18,12 +19,11 @@ import guide from '@/components/guide/guide' //自导首页
 
 import market from '@/components/market/market'  //微商城
 import hotel from '@/components/market/hotel'  //酒店
-import hotelDetail from '@/components/market/hotelDetail'  //微商城
+import hotelDetail from '@/components/market/hotelDetail'  //酒店详情
 
 import comment from '@/components/market/comment'  //微商城评论
 import scenic from '@/components/market/scenic'    //门票
 import scenicDetail from '@/components/market/scenicDetail'    //门票详情
-import tour from '@/components/market/tour'    //门票
 
 
 import scenicSpotDynamics from '@/components/news/scenicSpotDynamics' //景区动态
@@ -40,6 +40,11 @@ export default new Router({
       path: '/',
       name: 'index',
       component:index
+    },
+    {
+      path: 'login',
+      name: 'login',
+      component:login
     },
     {
       path:'/eatpage',
@@ -67,7 +72,7 @@ export default new Router({
       component: comment
     },
     {
-      path:'/scenic',
+      path:'/scenic',           //门票列表
       name:'scenic',
       component: scenic
     },
@@ -75,11 +80,6 @@ export default new Router({
       path:'/scenicDetail',
       name:'scenicDetail',
       component: scenicDetail
-    },
-    {
-      path:'/tour',
-      name:'tour',
-      component: tour
     },
     {
       path: '/guide',    //自导页面

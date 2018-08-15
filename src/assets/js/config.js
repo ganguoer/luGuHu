@@ -19,5 +19,17 @@ export default {
         sportlist:`${base}/sportlist.js`,
         marketlist:`${base}/marketlist.js`,
         activelist:`${base}/activelist.js`
+    },
+    my:{
+      notify:`${base}/notify.js`,
+      coupon:`${base}/coupon.js`,
+      order1:`${base}/order1.js`,
+      order2:`${base}/order2.js`,
+      order3:`${base}/order3.js`,
+      order4:`${base}/order4.js`
+    },
+    market:{
+      scenic:`${base}/scenic.js`,
+      hotel:`${base}/hotel.js`,
     }
 }
