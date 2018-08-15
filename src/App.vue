@@ -3,7 +3,6 @@
      <!-- <header :headTitle="headMsg"></header> -->
     <mt-header fixed title="泸沽湖"></mt-header>
 
-
     <div class="content">
       <router-view/>
     </div>

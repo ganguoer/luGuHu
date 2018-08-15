@@ -1,34 +1,37 @@
 <template>
  <div id="guide">
-    <div class="guideL" :class="{ active: isActive0 }" @click="search()">
-         <span class='icon-1-12'></span>
-         <p>景区</p>
-    </div>
-   <div class="guideR">
-     <ul class=''>
-       <li :class="{ active: isActive1 }" @click="search1()">
-         <span class='icon-1-13'></span>
-         <p>手绘图</p>
-       </li>
-       <li :class="{ active: isActive2 }" @click="search2()">
-         <span class='icon-1-14'></span>
-         <p>定位</p>
-       </li>
-       <li :class="{ active: isActive3 }" @click="search3()">
-         <span class='icon-1-15'></span>
-         <p>查找</p>
-       </li>
-     </ul>
-   </div>
+    <!--<div class="guideL" :class="{ active: isActive0 }" @click="search()">-->
+         <!--<span class='icon-1-12'></span>-->
+         <!--<p>景区</p>-->
+    <!--</div>-->
+   <!--<div class="guideR">-->
+     <!--<ul class=''>-->
+       <!--<li :class="{ active: isActive1 }" @click="search1()">-->
+         <!--<span class='icon-1-13'></span>-->
+         <!--<p>手绘图</p>-->
+       <!--</li>-->
+       <!--<li :class="{ active: isActive2 }" @click="search2()">-->
+         <!--<span class='icon-1-14'></span>-->
+         <!--<p>定位</p>-->
+       <!--</li>-->
+       <!--<li :class="{ active: isActive3 }" @click="search3()">-->
+         <!--<span class='icon-1-15'></span>-->
+         <!--<p>查找</p>-->
+       <!--</li>-->
+     <!--</ul>-->
+   <!--</div>-->
 
-    <div class="guideB">
-      <div class="detail">
-        <span class='icon-1-16'></span>景区概况
-      </div>
-      <div class="detail line">
-        <span class='icon-1-17'></span>浏览路线
-      </div>
-    </div>
+    <!--<div class="guideB">-->
+      <!--<div class="detail">-->
+        <!--<span class='icon-1-16'></span>景区概况-->
+      <!--</div>-->
+      <!--<div class="detail line">-->
+        <!--<span class='icon-1-17'></span>浏览路线-->
+      <!--</div>-->
+    <!--</div>-->
+
+   <iframe src="http://www.baidu.com" frameborder="0" width="100%" ></iframe>
+
  </div>
 
 </template>
@@ -69,7 +72,7 @@ export default{
 <style scoped>
 
 #guide{
-  background: url("../../../static/images/map.jpg") no-repeat 0 0;
+  /*background: url("../../../static/images/map.jpg") no-repeat 0 0;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -77,6 +80,9 @@ export default{
   background-size: cover;
   position: relative;
   text-align: center;
+}
+#iframe{
+  height: 11.24rem;
 }
   .guideL{
     width: 1rem;
