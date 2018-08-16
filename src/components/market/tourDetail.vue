@@ -1,17 +1,18 @@
 <template>
 <div id="scenicDetail">
+  <div  v-for="(item,index) in list" :key="index">
   <div class="top">
     <img src="../../../static/images/dydetail.jpg" alt="" class="bigimg">
     <div class="tourphoto"></div>
-    <div class="photoimg"><img src="../../../static/images/dy_09.jpg"></div>
+    <div class="photoimg"><img :src="item.img"></div>
   </div>
-  <p class="tourname">杰克</p>
+  <p class="tourname">{{item.name}}</p>
   <div class="link clearfix">
-      <div class="lf"><a href="tel:15932000248"><span class="icon-1-19"></span>15932000248</a></div>
+      <div class="lf"><a href="tel:15932000248"><span class="icon-1-19"></span>{{item.tel}}</a></div>
       <div class="lf weichart"><span class="icon-1-20"></span>微信交谈</div>
   </div>
   <div class='descript'> 
-      <span class="numberSale">销量：<em>2</em></span> <span class="lines">|</span> <span class="satisfaction">满意度：<em>100%</em></span>
+      <span class="numberSale">销量：<em>{{item.salenumber}}</em></span> <span class="lines">|</span> <span class="satisfaction">满意度：<em>{{item.agree}}</em></span>
       <span class="evaluate"> <em>点评</em> ></span>
   </div>
    <div class="details">
@@ -19,10 +20,10 @@
          <div class="chengD clearfix">
             <div class="chengDl">
                <div class='ctitle'>优惠套餐价</div>
-               <p class='know'>石林五日游</p>
+               <p class='know'>{{item.title}}</p>
             </div>
            <div class="chengDr">
-               <p class='price'> <span>￥</span><strong>105</strong> </p>
+               <p class='price'> <span>￥</span><strong>{{item.price}}</strong> </p>
                <div class='reserve'>预订</div>
            </div>
          </div>
@@ -31,48 +32,52 @@
 
      <div class="cheng">
        <h5 class='piao'>服务宗旨</h5>
-       <div class="chengD specisl">
-           <p>1、为您提供热情、周到、细致的服务，生动活泼的讲解。</p>
-           <p>2、持国家旅游局颁发的《导游证》带团，保证服务质量。</P>
-           <p>3、坚持三不原则：不私自带客人进入收取回佣的购物店；不私自增加约定行程之外的其他消费点；不推荐客人进入非法性的消费场所。</p>
-           <p>4、全程陪同讲解，提供能够为您提供吃、住、行、游、购、娱等各方面的向导服务。</p>
+       <div class="chengD specisl" v-html="item.zongzhi">
+           {{item.zongzhi}}
        </div>
        <h5 class='piao'>产品详情</h5>
-       <div class="chengD specisl">
-           <p>用胶片记录那些美好的景致，静止注定逝去的幻象，定格温暖的回忆，然后让它们慢慢变得陈旧而安静，搁浅在岁月低处落上尘埃。</p>
+       <div class="chengD specisl" v-html="item.prodetail">
+           {{item.prodetail}}
        </div>
        <div class="clearfix my-detailtit">
            <span class="liness"></span><span class="dot"></span>我的详细资料<span class="dot"></span><span class="liness"></span>
        </div>
-       <ul class="clearfix listmsg">
-            <li>年龄：26</li>
-            <li>星座：水平座</li>
-            <li>性格：活泼开朗</li>
-            <li>惯籍：北京</li>
-            <li>性格：活泼开朗</li>
-            <li>学历：大学本科</li>
-            <li>工龄：三年</li>
-            <li>资质：中韩文高级导游</li>
-            <li>爱好：户外运动，旅游</li>
-        </ul>
+       <div class="clearfix listmsg" v-html="item.ziliao">
+            {{item.ziliao}}
+        </div>
          <div class="clearfix my-detailtit">
            <span class="liness"></span><span class="dot"></span>我的带队宣言<span class="dot"></span><span class="liness"></span>
        </div>
-       <ul class="clearfix listmsg">
-           <p>用我热情周到的服务让您的旅途更加轻松愉快！</p>
+       <ul class="clearfix listmsg" v-html="item.xuanyan">
+           {{item.xuanyan}}
         </ul>
      </div>
-</div>
+    </div>
+    </div>
 </div>
 
 </template>
 
 <script>
+import config from "../../assets/js/config.js";
 export default{
     name:"tourDetail",
     data(){
         return{
-
+          list:0
+        }
+    },
+     mounted(){
+        this.getmsg();
+        // this. getmsg1()
+    },
+    methods:{
+        getmsg() {
+            var that = this;
+            that.$ajax.get(config.market.tourdetail).then(function(response) {
+                that.list = eval(response.data);
+                console.log(that.list)
+            });
         }
     }
 }

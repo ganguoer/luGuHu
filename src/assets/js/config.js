@@ -31,5 +31,7 @@ export default {
     market:{
       scenic:`${base}/scenic.js`,
       hotel:`${base}/hotel.js`,
+      tourlist:`${base}/tour.js`,
+      tourdetail:`${base}/tourdetail.js`
     }
 }
