@@ -8,7 +8,7 @@
         <ul>
           <li class='commentList'>
             <div class="comtop">
-              <img class='comimg'  src="../../../static/images/comments.png" alt="">
+              <span class="icon-1-24"></span>
               <span class="score">4.5</span>
               <span class='name'>Jiali0517</span>
             </div>
@@ -20,7 +20,7 @@
             <div class='reply'>
               <span>酒店回复：</span>感谢您对我们酒店的点评，我们会继续努力为您提供更加便捷幼稚的服务。期待您再次光临入住。
             </div>
-            <p  class='reply1'>查看酒店回复 <span class='icon-1-18'></span></p>
+            <p  class='reply1'>查看酒店回复 <span class='icon-bottom'></span></p>
           </li>
         </ul>
       </div>
@@ -63,15 +63,16 @@ export default{
 .comtop{
   position: relative;
 }
-  .comimg{
-    width: 0.68rem;
-  }
+.icon-1-24{
+  font-size: 0.68rem;
+  color: #0ca2e1;
+}
   .score{
     font-size: 0.24rem;
     color: #fff;
     position: absolute;
     top: 0.13rem;
-    left: 0.16rem;
+    left: 0.15rem;
   }
   .name{
     font-size: 0.22rem;

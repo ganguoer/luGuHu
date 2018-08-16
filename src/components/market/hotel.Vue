@@ -17,7 +17,7 @@
       <div class="hotelList">
         <ul>
           <li class="hotelL" v-for="(item,index) in list" :key="index">
-            <router-link class='toHotel' to='/hotelDetail'>
+            <router-link class='toHotel'  :to="{path:'/hotelDetail/?id='+item.id}">
               <img :src="item.srcimg" alt="">
               <div class="hotelC clearfix">
                 <div class="conL">
@@ -55,6 +55,38 @@
     </mt-loadmore>
   </div>
 
+  <div class="footfix">
+       <div class='fix' @click="showToggle">价格/星级</div>
+       <div class='fix' @click="actionSheet">欢迎度排序</div>
+    <div class="star_price" v-show="isShow" @click='showed'>
+         <div class='star_b'>
+           <p>价格(单选)</p>
+            <div class="select clearfix">
+              <span>不限</span>
+              <span>￥150元以下</span>
+              <span>￥150-￥300</span>
+              <span>￥301-￥450</span>
+              <span>￥451-￥600</span>
+              <span>￥601-￥1000</span>
+              <span>￥1000以上</span>
+            </div>
+           <p>星级(单选)</p>
+           <div class="selects clearfix">
+              <span>不限</span>
+              <span>快捷连锁</span>
+              <span>二星级及一下/经济</span>
+              <span>三星级/舒适</span>
+              <span>四星级/高档</span>
+              <span>五星级/豪华</span>
+           </div>
+           <div class='isSure'> 确定 </div>
+         </div>
+    </div>
+    <mt-actionsheet  :actions="data"  v-model="sheetVisible" cancelText=''>
+    </mt-actionsheet>
+
+  </div>
+
 </div>
 
 </template>
@@ -74,6 +106,33 @@
         topStatus: "", //顶部下拉加载状态
         translate: 0, //
         moveTranslate: 0,
+        data: [
+          {
+          name: '欢迎度排序',
+          method : this.getCamera	// 调用methods中的函数
+          },
+          {
+          name: '评分 高→低',
+          method : this.getLibrary	// 调用methods中的函数
+          },
+          {
+            name: '价格 低→高',
+            method : this.getLibrary	// 调用methods中的函数
+          },
+          {
+            name: '价格 高→低',
+            method : this.getLibrary	// 调用methods中的函数
+          },
+          {
+            name: '距离 近→远',
+            method : this.getLibrary	// 调用methods中的函数
+          }
+        ],
+
+        // action sheet 默认不显示，为false。操作sheetVisible可以控制显示与隐藏
+        sheetVisible: false,
+        isShow: false
+
       }
     },
     mounted() {
@@ -110,13 +169,32 @@
       handleTopChange(status) {
         this.moveTranslate = 1;
         this.topStatus = status;
+      },
+      actionSheet: function(){
+        // 打开action sheet
+        this.sheetVisible = true;
+      },
+      showToggle: function(){
+        // 打开action sheet
+        this.isShow = !this.isShow
+      },
+      showed:function () {
+        this.isShow = !this.isShow
+      },
+      getCamera: function(){
+        console.log("打开照相机")
+      },
+      getLibrary: function(){
+        console.log("打开相册")
       }
+
     }
 }
 
 </script>
 
 <style scoped>
+
   #hotel{
     text-align: center;
   }
@@ -226,7 +304,111 @@
 
   .page-loadmore-wrapper {
     overflow: scroll;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.8rem;
   }
   .mint-cell-wrapper{padding: 0 5%}
+
+
+  /* 星级、欢迎度 */
+  .footfix{
+    position: fixed;
+    height: 1.11rem;
+    line-height: 1.11rem;
+    background-color: #fba207;
+    bottom: 1.3rem;
+    display: flex;
+    width: 100%;
+    z-index: 99;
+  }
+  .footfix>.fix{
+    flex: 1;
+    font-size: 0.28rem;
+    color: #fff;
+  }
+  .footfix>div.fix:first-child{
+    border-right: 1px solid #fffafa;
+  }
+  .star_price{
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 13.34rem;
+    background-color:rgba(0,0,0,0.5);
+  }
+  .star_b{
+    z-index:100;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 0.25rem 0.24rem;
+    text-align: left;
+  }
+  .mint-actionsheet-list .mint-actionsheet-listitem,.mint-actionsheet-list .mint-actionsheet-button{
+    font-size: 0.24rem!important;
+  }
+
+  .star_b p{
+    font-size: 0.24rem;
+    color: #333333;
+    height: 0.29rem;
+    line-height: 0.29rem;
+    margin-bottom: 0.1rem;
+  }
+  .select>span{
+    display:block;
+    float: left;
+    width: 1.73rem;
+    height: 0.69rem;
+    line-height: 0.69rem;
+    font-size: 0.24rem;
+    color: #666666;
+    background-color: #ececec;
+    text-align: center;
+    margin: 0.08rem 0;
+    margin-right: 0.03rem;
+    overflow: hidden;
+  }
+  .select{
+    margin-bottom: 0.2rem;
+  }
+  .selects{
+    margin-bottom: 0.2rem;
+  }
+  .select>span:first-child{
+    background-color: #fba207;
+    color: #fff;
+  }
+  .selects>span:first-child{
+    background-color: #fba207;
+    color: #fff;
+  }
+  .selects>span{
+    display:block;
+    float: left;
+    width: 2.32rem;
+    height: 0.69rem;
+    line-height: 0.69rem;
+    font-size: 0.24rem;
+    color: #666666;
+    background-color: #ececec;
+    text-align: center;
+    margin: 0.08rem 0;
+    margin-right: 0.03rem;
+    overflow: hidden;
+  }
+  .isSure{
+    width: 4.64rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background-color: #0ca2e1;
+    border-radius: 0.4rem;
+    color: #fff;
+    text-align: center;
+    margin: 0.3rem auto 0.3rem;
+  }
+
 </style>

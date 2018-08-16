@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-     <!-- <header :headTitle="headMsg"></header> -->
-    <mt-header fixed title="泸沽湖"></mt-header>
+    <!--header-->
+    <div class="header">
+      <mt-header fixed title="泸沽湖">
+        <router-link to="/"  slot="left">
+          <mt-button icon="back" @click="$router.back(-1)"></mt-button>
+        </router-link>
+        <mt-button icon="more" slot="right"></mt-button>
+      </mt-header>
+    </div>
 
+    <!--content-->
     <div class="content">
       <router-view/>
     </div>
-    <bottom-nav :idx="0"></bottom-nav>
+    <!--footer-->
+    <div class="footer">
+       <bottom-nav :idx="0"></bottom-nav>
+    </div>
+
  </div>
 
 </template>
@@ -22,7 +34,7 @@
   },
   components:{
       'bottom-nav':bottomNav
-  }
+  },
 
 }
 </script>
@@ -34,9 +46,25 @@
   -moz-osx-font-smoothing: grayscale;
   height: 100%
 }
-.content{
-  margin-top: 0.8rem;
+.header,.content,.footer{
+  position:absolute;
+  left:0;
+  width:100%;
 }
+.header {
+  top:0;
+  height:0.8rem;
+}
+.content {
+  top:0.8rem;
+  bottom:1.3rem;
+  overflow-y:auto;
+}
+.footer {
+  bottom:0;
+  height:1.3rem;
+}
+
 .mint-header{
   background-color: #333333;
   height: .8rem;

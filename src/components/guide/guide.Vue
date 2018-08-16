@@ -30,7 +30,7 @@
       <!--</div>-->
     <!--</div>-->
 
-   <iframe src="http://www.baidu.com" frameborder="0" width="100%" ></iframe>
+   <iframe id="iframe" src="http://fzdao.citgroup.cn" frameborder="0" width="100%" ></iframe>
 
  </div>
 

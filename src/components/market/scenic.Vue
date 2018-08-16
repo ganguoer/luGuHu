@@ -14,7 +14,7 @@
       <div class="scenicLists">
         <ul>
           <li class="scenicList clearfix" v-for="(item,index) in list" :key="index">
-            <router-link class='scenic_a' to='/scenicDetail'>
+            <router-link class='scenic_a' :to="{path:'/scenicDetail/?id='+item.id}">
               <img :src="item.srcimg" alt=" jingqu ">
               <div class="conlist">
                 <div class="conlistL">
