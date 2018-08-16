@@ -1,7 +1,7 @@
 <template>
   <div>
     <mt-cell>
-                    <div class="page-loadmore-wrapper" style="height:17rem">
+      <div class="page-loadmore-wrapper" style="height:17rem">
                         <mt-loadmore  @top-status-change="handleTopChange"
                                 :bottom-method="loadBottom" @bottom-status-change="handleBottomChange" :bottom-all-loaded="allLoaded"
                                 :auto-fill="false" ref="loadmore">
@@ -33,7 +33,7 @@
                             </div>
                         </mt-loadmore>
                     </div>
-                </mt-cell>
+    </mt-cell>
   </div>
 </template>
 

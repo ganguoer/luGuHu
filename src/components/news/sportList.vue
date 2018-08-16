@@ -16,7 +16,7 @@
 <script>
 import config from "../../assets/js/config.js";
 export default {
-    name: 'sportlist',
+    name: 'indexListDetail',
     data () {
         return {
         msg: []
@@ -43,7 +43,19 @@ export default {
     .titdiv .icon-s{width: .08rem; height:.33rem; background: #0ca2e1; display: inline-block;margin: .16rem 0 0 .15rem}
     .titdiv .hoteltit{display:inline-block;padding-left:.2rem; line-height: .66rem; color: #333;font-size: .28rem}
     .descriptcontent{background: #fff; border-top: solid 1px #e7e7e7; padding: 0 5%; margin-top: .1rem}
-   
+    .descriptcontent ul{margin-top: .2rem}
+    .descriptcontent ul li{ line-height: .4rem;text-align: left; text-indent: .4rem}
+    .desdetail{
+        line-height: .45rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 13;
+        -webkit-box-orient: vertical;
+        padding-top: .2rem;
+        text-indent: .4rem
+    }
+    .descriptcontent .firstimg{ margin-top: .1rem}
     .bgcolor{background: #f0f0f0;width: 100%; height: 100%}
     .moredetail{
         height: .92rem;
