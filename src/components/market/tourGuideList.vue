@@ -9,7 +9,7 @@
             <mt-loadmore  @top-status-change="handleTopChange":bottom-method="loadBottom" @bottom-status-change="handleBottomChange" :bottom-all-loaded="allLoaded":auto-fill="false" ref="loadmore">
                 <ul class="page-loadmore-list" v-if="list>0">
                 </ul>
-                <ul>
+                <ul style="padding-bottom:1rem">
                     <li class="scenicList clearfix" v-for="(item,index) in list" :key="index">
                         <router-link class='scenic_a' :to="{path:'/tourDetail/?id='+item.id}" @click="routefn()">
                             <img :src="item.img" alt=" jingqu ">
