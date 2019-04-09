@@ -25,11 +25,7 @@
                   <span >{{item.comment}} </span>  <span class="type">{{item.type}}</span>
                   <p class='detail'>{{item.address}}</p>
                   <div class="star">
-                    <span class='icon-1-21' ></span>
-                    <span class='icon-1-21'></span>
-                    <span class='icon-1-21'></span>
-                    <span class='icon-1-21'></span>
-                    <span class='icon-1-21'></span>
+                    <span class='icon-1-21' v-for="(item,index) in item.star"></span>
                     <span class="score">{{item.star}}分</span>
                   </div>
                 </div>

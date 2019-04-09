@@ -11,7 +11,7 @@
       <div class="lf"><a href="tel:15932000248"><span class="icon-1-19"></span>{{item.tel}}</a></div>
       <div class="lf weichart"><span class="icon-1-20"></span>微信交谈</div>
   </div>
-  <div class='descript'> 
+  <div class='descript'>
       <span class="numberSale">销量：<em>{{item.salenumber}}</em></span> <span class="lines">|</span> <span class="satisfaction">满意度：<em>{{item.agree}}</em></span>
       <span class="evaluate"> <em>点评</em> ></span>
   </div>

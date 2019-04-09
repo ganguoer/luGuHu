@@ -1,7 +1,7 @@
 let isProd = true;
 
 // let prod = "/api";
-let prod = "http://localhost:8080/static/services";
+let prod = "http://lghwap.citgroup.cn/static/services";
 // let dev = "http://211.149.159.80:8080";
 
 let base = isProd ? prod : dev;

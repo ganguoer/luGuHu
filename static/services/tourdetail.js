@@ -1,6 +1,6 @@
 [
     {
-        "img":"http://localhost:8080/static/images/dy_06.jpg",
+        "img":"http://lghwap.citgroup.cn/static/images/dy_06.jpg",
         "name":"杰克",
         "tel":"18310179650",
         "salenumber":"5",

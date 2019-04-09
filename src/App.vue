@@ -66,7 +66,7 @@
 }
 
 .mint-header{
-  background-color: #333333;
+  background-color: #333333!important;
   height: .8rem;
 }
 .mint-header-title{

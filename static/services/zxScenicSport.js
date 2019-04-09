@@ -3,7 +3,7 @@
         "title":"泸沽湖环境综合整治让“高原明珠”再放光彩",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/zx_03.jpg',
+        "srcimg":'http://lghwap.citgroup.cn/static/images/zx_03.jpg',
         'descript':'6月的泸沽湖迎来了雨季，却依然阻挡不了大批游客前来游玩。游客越多，李尚林就越感到压力大。一大早',
         "id":'1'
     },
@@ -11,7 +11,7 @@
         "title":"丽江旅游拟建设运营泸沽湖摩梭小镇项目",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/zx_06.jpg',
+        "srcimg":'http://lghwap.citgroup.cn/static/images/zx_06.jpg',
         'descript':'丽江旅游(002033)晚间公告,公司与宁蒗县人民政府签署了《宁蒗县泸沽湖摩梭小镇建设项目投资意向协议书》',
         "id":'1'
     },
@@ -19,7 +19,7 @@
         "title":"丽江泸沽湖签约中智游打造智慧景区标杆",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/zx_08.jpg',
+        "srcimg":'http://lghwap.citgroup.cn/static/images/zx_08.jpg',
         'descript':'近日，丽江泸沽湖旅游开发有限公司基于云南省政府“一部手机游云南”项目要求和自身管理服务需求，开展“云南泸沽湖景区智',
         "id":'1'
     },
@@ -27,7 +27,7 @@
         "title":"泸沽湖环境综合整治让“高原明珠”再放光彩",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/zx_03.jpg',
+        "srcimg":'http://lghwap.citgroup.cn/static/images/zx_03.jpg',
         'descript':'6月的泸沽湖迎来了雨季，却依然阻挡不了大批游客前来游玩。游客越多，李尚林就越感到压力大。一大早',
         "id":'1'
     },
@@ -35,7 +35,7 @@
         "title":"丽江旅游拟建设运营泸沽湖摩梭小镇项目",
         "source":"泸沽湖发布",
         "times":'2018-06-28',
-        "srcimg":'http://localhost:8080/static/images/zx_06.jpg',
+        "srcimg":'http://lghwap.citgroup.cn/static/images/zx_06.jpg',
         'descript':'丽江旅游(002033)晚间公告,公司与宁蒗县人民政府签署了《宁蒗县泸沽湖摩梭小镇建设项目投资意向协议书》',
         "id":'1'
     }

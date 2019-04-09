@@ -21,11 +21,7 @@
                   <p class='title'>{{item.title}}</p>
                   <p class='descript'> <span>{{item.address}} </span> <span>{{item.starA}}</span> <span class='nature'>{{item.nature}}</span></p>
                   <p class='star'>
-                    <span class='icon-1-21'></span>
-                    <span class='icon-1-21'></span>
-                    <span class='icon-1-21'></span>
-                    <span class='icon-1-21'></span>
-                    <span class='icon-1-21'></span>
+                    <span class='icon-1-21' v-for="(item,index) in item.star"></span>
                     <strong>{{item.star}}分</strong>
                   </p>
                 </div>
